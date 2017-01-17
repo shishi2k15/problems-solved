@@ -1,4 +1,4 @@
-###Decoding the Hallway
+##Decoding the Hallway
 http://open.kattis.com/problems/decodingthehallway  
 Solution author: Finn Lidbetter  
 Solution date: 11/01/17
