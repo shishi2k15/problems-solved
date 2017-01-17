@@ -1,6 +1,8 @@
 ###Decoding the Hallway
 open.kattis.com/problems/decodingthehallway
+
 Solution author: Finn Lidbetter
+
 Solution date: 11/01/17
 
 Solution:
