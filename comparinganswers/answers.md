@@ -1,6 +1,6 @@
 ##Comparing answers
 http://open.kattis.com/problems/comparinganswers  
-Solution author: Finn Lidbetter  
+Solution author(s): Finn Lidbetter (coded after researching Freivalds' algorithm), Micah Stairs (identified it as a matrix multiplication problem)  
 Solution date: 16/01/17  
 
 Solution:  
