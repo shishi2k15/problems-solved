@@ -1,0 +1,8 @@
+##Darts  
+http://open.kattis.com/problems/darts  
+Solution author: Finn Lidbetter  
+Solution date: February 6th, 2017  
+
+Solution:  
+The solution to this problem uses dynamic programming. We keep a memoisation that for a given score for player A, a score for player B and whose turn it is, gives the probability that that player will win. For player A we calculate the probability that they will win for each of the possible scores in a single turn and multiply each by 1/20. For player B we calculate the probability that they will win for each of the possible segments that they aim at. To do this we find the answer for the sub-problem with the appropriate score adjustment and switching the player's turn. We also use the fact that if the probability that player A for a particular pair of scores and turn wins with probability x, then B will win in that same situation (including whose turn it is) with probability 1-x. We then have to handle the case where hitting a number that would lead to a negative score leaves the score as it is. To deal with this we use a fourth dimension for the array, a maximum depth. Each time a recursive call is made, the depth gets incremented. If the depth reaches 200, we treat the value as being equal to 0 as the multipliers will have made the probability negligible at that point. Using this depth made the solution too slow. However, we observed that there are only 501 possible input values, so we pre-computed all of the answers, stored them in an array and just output each value that was queried by looking up the answer in the array.  
+Computing all of the answers took approximately 5 minutes of CPU time.
